@@ -1,3 +1,5 @@
+[![AIxponential](../images/shortLogo.png)](https://aixponential.org)
+
 # AIxponential Prompting Course
 
 An interactive course teaching AI prompting techniques, from fundamentals to advanced applications.
@@ -122,11 +124,13 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📞 Support
 
-For support, please:
+For support:
 1. Check the documentation
 2. Search existing issues
 3. Create a new issue if needed
 
 ## 🔄 Updates
 
-Stay updated with the latest course content and features by following our repository. 
+Stay updated with the latest course content and features by following our repository.
+
+For more information about AIxponential and our other initiatives, visit [AIxponential.org](https://AIxponential.org). 

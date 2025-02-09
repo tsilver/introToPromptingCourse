@@ -1,13 +1,42 @@
 import streamlit as st
 from utils.navigation import init_navigation, navigate_to, get_current_page, handle_navigation, check_navigation_rerun, scroll_to_top
+import os
+from PIL import Image
+import base64
 
 # Configure the Streamlit page settings - MUST BE FIRST
 st.set_page_config(
     page_title="Interactive Prompting Guide",
     page_icon="💭",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="collapsed"
 )
+
+# Add logo and tagline at the top of every page
+logo_path = os.path.join(os.path.dirname(__file__), "images", "shortLogo.png")
+if os.path.exists(logo_path):
+    # Create columns for logo and tagline
+    col1, col2 = st.columns([1, 4])
+    with col1:
+        # Read the image file and convert to base64
+        with open(logo_path, "rb") as f:
+            image_data = base64.b64encode(f.read()).decode()
+        
+        st.markdown(
+            f'<div style="padding: 10px;">'
+            f'<a href="https://aixponential.org" target="_blank">'
+            f'<img src="data:image/png;base64,{image_data}" style="max-width: 150px;">'
+            f'</a></div>',
+            unsafe_allow_html=True
+        )
+    
+    with col2:
+        st.markdown(
+            '<div style="padding: 25px; font-size: 20px; color: #666;">'
+            'Empowering a Future Shaped by Knowledge, Truth, and Access'
+            '</div>',
+            unsafe_allow_html=True
+        )
 
 # Add scroll to top functionality
 scroll_to_top()
@@ -171,7 +200,6 @@ def show_home_page():
 
 # Footer
 st.markdown("---")
-st.markdown("*Built with Streamlit and ❤️*")
 
 # Note: Future development will include:
 # - Multiple pages in the 'pages' directory
