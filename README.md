@@ -1,8 +1,6 @@
-[![AIxponential](images/shortLogo.png)](https://aixponential.org)
+[![AIxponential](http://aixponential.org/images/shortLogo.png)](https://aixponential.org)  
 
-# AIxponential
-
-[AIxponential.org](https://AIxponential.org) is dedicated to democratizing AI education through accessible, engaging, and ethical learning experiences.
+# [AIxponential.org](https://AIxponential.org) is dedicated to democratizing AI education through accessible, engaging, and ethical learning experiences.
 
 ## 🎯 Our Mission
 
