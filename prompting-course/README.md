@@ -1,4 +1,5 @@
-[![AIxponential](../images/shortLogo.png)](https://aixponential.org)
+[![AIxponential](http://aixponential.org/images/shortLogo.png)](https://aixponential.org)  
+Brought to you by [AIxponential.org](https://AIxponential.org) 
 
 # AIxponential Prompting Course
 
