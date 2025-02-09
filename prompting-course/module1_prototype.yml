@@ -1,0 +1,1425 @@
+lesson_1_1:
+  page_2:
+    title: "Components of an Effective Prompt"
+    route: "module1/lesson1_1/page2"
+    content:
+      introduction:
+        type: "markdown"
+        text: |
+          Understanding the key components of effective prompts:
+          1. Clear Instruction
+          2. Context
+          3. Format
+          4. Examples
+      
+      examples:
+        - title: "Basic vs. Detailed Prompt"
+          type: "comparison"
+          basic_prompt: "Explain photosynthesis."
+          detailed_prompt: |
+            Explain photosynthesis in simple terms, focusing on:
+            1. What it is
+            2. Why it's important
+            3. Basic steps involved
+            
+            Keep the explanation suitable for a middle school student.
+          
+      interactive_elements:
+        - type: "button"
+          text: "Compare Responses"
+          action: "compare_prompts"
+          api_calls:
+            - prompt: "${basic_prompt}"
+            - prompt: "${detailed_prompt}"
+        
+        - type: "practice"
+          title: "Your Turn!"
+          instructions: |
+            Improve this basic prompt: "Write about climate change."
+            Consider adding:
+            - Specific instructions
+            - Context or constraints
+            - Desired format
+            - Target audience
+          components:
+            - type: "text_area"
+              key: "practice_prompt"
+            - type: "button"
+              text: "Test Your Prompt"
+              action: "test_prompt"
+      
+      key_takeaways:
+        type: "markdown"
+        text: |
+          - Clear instructions lead to better responses
+          - Context helps AI understand your needs
+          - Formatting guidance structures the output
+          - Examples can clarify expectations
+      
+      navigation:
+        previous_page: "module1/lesson1_1/page1"
+        next_page: "module1/lesson1_1/page3"
+
+lesson_1_2:
+  page_1:
+    title: "Adding Constraints and Context"
+    route: "module1/lesson1_2/page1"
+    content:
+      introduction:
+        type: "markdown"
+        text: |
+          Understanding how to use constraints and context in prompts:
+          - Clear constraints to guide output
+          - Relevant context to frame tasks
+          - Specific format requirements
+          
+      framework:
+        title: "PCTF Framework"
+        components:
+          - name: "Persona"
+            description: "Who the AI should act as"
+          - name: "Context"
+            description: "Background information and situation"
+          - name: "Task"
+            description: "Specific instructions and goals"
+          - name: "Format"
+            description: "Desired structure and style"
+      
+      examples:
+        - title: "Basic vs. PCTF-Enhanced"
+          type: "comparison"
+          basic_prompt: "Write about renewable energy."
+          enhanced_prompt: |
+            As an environmental science educator (Persona),
+            given the increasing focus on climate change solutions (Context),
+            explain three main types of renewable energy suitable for residential use (Task).
+            Structure your response with:
+            - Brief overview of each type
+            - Installation requirements
+            - Average cost and savings
+            - Environmental impact
+            (Format)
+      
+      interactive_elements:
+        - type: "button"
+          text: "Compare Responses"
+          action: "compare_prompts"
+          api_calls:
+            - prompt: "${basic_prompt}"
+            - prompt: "${enhanced_prompt}"
+        
+        - type: "practice"
+          title: "Your Turn!"
+          instructions: |
+            Transform this basic prompt using PCTF:
+            "Explain machine learning."
+          components:
+            - type: "text_area"
+              key: "practice_prompt"
+            - type: "button"
+              text: "Test Your Prompt"
+              action: "test_prompt"
+      
+      navigation:
+        previous_page: "module1_intro"
+        next_page: "module1/lesson1_2/page2"
+
+lesson_1_3:
+  page_1:
+    title: "Asking for Explanations"
+    route: "module1/lesson1_3/page1"
+    content:
+      introduction:
+        type: "markdown"
+        text: |
+          Learning techniques for getting AI to:
+          - Explain reasoning step by step
+          - Break down complex concepts
+          - Show work and thought process
+          - Provide clear, verifiable explanations
+      
+      techniques:
+        title: "Explanation Techniques"
+        sections:
+          - name: "Step-by-Step Breakdowns"
+            benefits:
+              - "Makes complex processes clearer"
+              - "Helps identify potential issues"
+              - "Easier to follow and verify"
+          - name: "Multiple Perspectives"
+            benefits:
+              - "Gets more comprehensive understanding"
+              - "Reveals different approaches"
+              - "Helps avoid bias"
+          - name: "Chain of Thought"
+            benefits:
+              - "Shows AI's reasoning process"
+              - "Makes assumptions explicit"
+              - "Helps catch logical errors"
+      
+      examples:
+        - title: "Basic vs. Explanation-Focused"
+          type: "comparison"
+          basic_prompt: "Why is the sky blue?"
+          detailed_prompt: |
+            Explain why the sky appears blue, with these requirements:
+            1. Break down the scientific process step by step
+            2. Use simple analogies to illustrate key concepts
+            3. Explain how we can verify this explanation
+            4. Address common misconceptions
+            
+            Keep explanations accessible to a high school student.
+      
+      interactive_elements:
+        - type: "button"
+          text: "Compare Explanations"
+          action: "compare_explanations"
+          api_calls:
+            - prompt: "${basic_prompt}"
+            - prompt: "${detailed_prompt}"
+        
+        - type: "practice"
+          title: "Your Turn!"
+          instructions: |
+            Transform this basic question:
+            "How does a computer work?"
+            Include requests for:
+            - Step-by-step explanation
+            - Clear analogies
+            - Verifiable details
+            - Common misconception corrections
+          components:
+            - type: "text_area"
+              key: "practice_prompt"
+            - type: "button"
+              text: "Test Your Prompt"
+              action: "test_prompt"
+      
+      navigation:
+        previous_page: "module1_intro"
+        next_page: "module1/lesson1_3/page2"
+
+lesson_1_4:
+  page_1:
+    title: "Question Answering and Conversation"
+    route: "module1/lesson1_4/page1"
+    content:
+      introduction:
+        type: "markdown"
+        text: |
+          Learning how to:
+          - Structure effective questions
+          - Maintain conversation context
+          - Follow up effectively
+          - Guide conversations
+      
+      principles:
+        title: "Core Principles"
+        sections:
+          - name: "Question Clarity"
+            points:
+              - "Be specific and precise"
+              - "One question at a time"
+              - "Clear scope and constraints"
+          - name: "Context Management"
+            points:
+              - "Reference previous responses"
+              - "Build on established information"
+              - "Maintain conversation thread"
+          - name: "Follow-up Techniques"
+            points:
+              - "Ask for clarification"
+              - "Request examples"
+              - "Explore alternatives"
+              - "Deepen understanding"
+      
+      interactive_elements:
+        - type: "conversation"
+          title: "Climate Change Discussion"
+          prompts:
+            - "What are the main approaches to addressing climate change?"
+            - |
+              Based on your previous response about climate change solutions, 
+              explain in detail how renewable energy specifically helps with:
+              1. Reducing emissions
+              2. Economic benefits
+              3. Implementation challenges
+            - |
+              Regarding the implementation challenges you mentioned for renewable energy,
+              what are some successful strategies that countries have used to overcome them?
+              Include specific examples and results.
+        
+        - type: "practice"
+          title: "Your Turn!"
+          instructions: |
+            Create follow-up questions about machine learning:
+            - Build on previous information
+            - Maintain clear context
+            - Get increasingly specific
+            - Explore practical applications
+          components:
+            - type: "text_area"
+              key: "question_1"
+            - type: "text_area"
+              key: "question_2"
+            - type: "text_area"
+              key: "question_3"
+      
+      navigation:
+        previous_page: "module1_intro"
+        next_page: "module1/lesson1_4/page2"
+
+module2:
+  intro:
+    title: "Advanced Prompting Techniques"
+    route: "module2_intro"
+    content:
+      introduction:
+        type: "markdown"
+        text: |
+          Advanced techniques to enhance AI interactions:
+          - Few-shot prompting with examples
+          - Persona and role-based prompting
+          - Structured output formatting
+          - Iterative prompt refinement
+      
+      lessons:
+        - number: "2.1"
+          title: "Few-Shot Prompting with Examples"
+          topics:
+            - "Understanding few-shot learning"
+            - "Creating effective examples"
+            - "Pattern matching and consistency"
+            - "When to use example-based prompts"
+        - number: "2.2"
+          title: "Persona and Role-Based Prompting"
+          topics:
+            - "Defining AI personas"
+            - "Role-specific instructions"
+            - "Style and tone control"
+            - "Expert perspective prompting"
+        - number: "2.3"
+          title: "Structured Output Formatting"
+          topics:
+            - "JSON and XML outputs"
+            - "Table and list formatting"
+            - "Custom data structures"
+            - "Format validation techniques"
+        - number: "2.4"
+          title: "Iterative Prompt Refinement"
+          topics:
+            - "Testing and evaluation"
+            - "Error analysis"
+            - "Systematic improvements"
+            - "Optimization strategies"
+      
+      prerequisites:
+        - "Completion of Module 1"
+        - "Basic understanding of prompt components"
+        - "Familiarity with AI interactions"
+      
+      structure:
+        - type: "Advanced concepts introduction"
+        - type: "Technique demonstrations"
+        - type: "Complex exercises"
+        - type: "Real-world applications"
+        - type: "Technique comparison and analysis"
+      
+      navigation:
+        previous_page: "module1/lesson1_4/page1"
+        next_page: "module2/lesson2_1/page1"
+
+lesson_2_1:
+  page_1:
+    title: "Few-Shot Prompting with Examples"
+    route: "module2/lesson2_1/page1"
+    content:
+      introduction:
+        type: "markdown"
+        text: |
+          Learning about few-shot prompting:
+          - Creating effective example sets
+          - When to use few-shot prompting
+          - Best practices for pattern matching
+          - Techniques for maintaining consistency
+      
+      concepts:
+        title: "Key Concepts"
+        components:
+          - name: "Input"
+            description: "What you might ask"
+          - name: "Output"
+            description: "How you want it answered"
+          - name: "Pattern"
+            description: "The consistent structure to follow"
+      
+      examples:
+        - title: "Customer Feedback Classification"
+          type: "comparison"
+          basic_prompt: |
+            Classify this feedback as positive, negative, or neutral:
+            "The product works fine but shipping took longer than expected."
+          few_shot_prompt: |
+            Here are some examples of customer feedback classification:
+
+            Input: "Love the quality, fast delivery!"
+            Classification: Positive (Reason: Expresses satisfaction with product and service)
+
+            Input: "Item arrived damaged and support was unhelpful"
+            Classification: Negative (Reason: Product issues and poor service experience)
+
+            Input: "Product meets expectations, nothing special"
+            Classification: Neutral (Reason: Neither particularly positive nor negative)
+
+            Now classify this feedback:
+            "The product works fine but shipping took longer than expected."
+      
+      practice:
+        title: "Creative Writing Prompts"
+        examples:
+          - theme: "Lost in the woods"
+            prompt: "You discover an ancient map carved into a tree trunk. As you trace its lines with your finger, the bark begins to glow."
+          - theme: "Future technology"
+            prompt: "Your smart home AI apologizes for a mistake, but you live in a normal house without any AI systems."
+        
+      interactive_elements:
+        - type: "button"
+          text: "Compare Responses"
+          action: "compare_responses"
+          api_calls:
+            - prompt: "${basic_prompt}"
+            - prompt: "${few_shot_prompt}"
+        
+        - type: "practice"
+          title: "Your Turn!"
+          instructions: |
+            Create a few-shot prompt for creative writing prompts
+            - Follow the example pattern
+            - Add 1-2 more examples
+            - Request a new prompt
+          components:
+            - type: "text_area"
+              key: "practice_prompt"
+            - type: "button"
+              text: "Test Your Prompt"
+              action: "test_prompt"
+      
+      navigation:
+        previous_page: "module2_intro"
+        next_page: "module2/lesson2_1/page2"
+
+  page_2:
+    title: "Advanced Few-Shot Techniques"
+    route: "module2/lesson2_1/page2"
+    content:
+      introduction:
+        type: "markdown"
+        text: |
+          Advanced few-shot techniques:
+          - Pattern variations and combinations
+          - Handling complex scenarios
+          - Troubleshooting common issues
+          - Best practices for different tasks
+      
+      strategies:
+        title: "Advanced Strategies"
+        sections:
+          - name: "Multiple Pattern Types"
+            types:
+              - "Input-Output pairs"
+              - "Step-by-step reasoning"
+              - "Conditional responses"
+              - "Format variations"
+          - name: "Quality Considerations"
+            factors:
+              - "Example diversity"
+              - "Pattern consistency"
+              - "Clear transitions"
+              - "Edge case handling"
+      
+      examples:
+        - title: "Complex Text Analysis"
+          type: "demonstration"
+          prompt: |
+            Here are examples of text analysis with multiple aspects:
+
+            Text: "The new electric car shows promising performance, but the high price tag may limit its market impact."
+            Analysis:
+            - Sentiment: Mixed (positive performance, negative price concern)
+            - Key Points: Performance, Price, Market impact
+            - Recommendation: Consider target market segmentation
+
+            Text: "Studies show increasing ocean temperatures are causing coral bleaching at unprecedented rates."
+            Analysis:
+            - Sentiment: Negative (environmental concern)
+            - Key Points: Ocean temperatures, Coral bleaching, Rate of change
+            - Recommendation: Highlight urgency of climate action
+
+            Now analyze this text:
+            "Remote work has increased productivity for many companies, though some struggle with team collaboration."
+      
+      practice:
+        title: "Movie Review Analysis"
+        example: |
+          Review: "The stunning visuals couldn't make up for the weak storyline, though the lead actress gave a compelling performance."
+          Analysis:
+          - Rating: 3/5 (Above average)
+          - Acting: Strong lead performance, supporting cast adequate
+          - Plot: Weak, lacks coherence
+          - Technical: Excellent visuals and cinematography
+        
+      interactive_elements:
+        - type: "button"
+          text: "See Analysis"
+          action: "see_analysis"
+          api_calls:
+            - prompt: "${example_prompt}"
+        
+        - type: "practice"
+          title: "Your Turn!"
+          instructions: |
+            Create a complex few-shot prompt for movie reviews
+            Include analysis of:
+            - Overall rating
+            - Acting performance
+            - Plot strength
+            - Technical aspects
+          components:
+            - type: "text_area"
+              key: "practice_prompt"
+            - type: "button"
+              text: "Test Your Prompt"
+              action: "test_prompt"
+      
+      navigation:
+        previous_page: "module2/lesson2_1/page1"
+        next_page: "module2/lesson2_2/page1"
+
+lesson_2_2:
+  page_1:
+    title: "Persona and Role-Based Prompting"
+    route: "module2/lesson2_2/page1"
+    content:
+      introduction:
+        type: "markdown"
+        text: |
+          Learning to use personas and roles to:
+          - Control writing style and tone
+          - Get expertise-specific responses
+          - Maintain consistent character voice
+          - Achieve specific communication goals
+      
+      concepts:
+        title: "Persona Components"
+        elements:
+          - name: "Role Definition"
+            description: "Who the AI should act as"
+          - name: "Expertise Level"
+            description: "Required knowledge depth"
+          - name: "Communication Style"
+            description: "Tone and language approach"
+          - name: "Target Audience"
+            description: "Who the response is for"
+      
+      examples:
+        - title: "Smartphone Explanation"
+          type: "comparison"
+          prompts:
+            - type: "basic"
+              text: "Explain how a smartphone works."
+            - type: "educator"
+              text: |
+                Act as a friendly tech educator explaining to a group of seniors.
+                Your goal is to build confidence with technology.
+                Use simple analogies and avoid technical jargon.
+                Break down concepts into manageable parts.
+
+                Explain how a smartphone works, focusing on:
+                1. Basic components
+                2. Daily usage
+                3. Common features
+                4. Safety and privacy
+            - type: "engineer"
+              text: |
+                Act as a software engineer explaining to a technical audience.
+                Focus on system architecture and technical specifications.
+                Use precise terminology and include technical details.
+                Address performance considerations.
+
+                Explain how a smartphone works, focusing on:
+                1. Hardware components
+                2. Operating system
+                3. Application framework
+                4. Network connectivity
+      
+      practice:
+        title: "Climate Change Explanation"
+        considerations:
+          - "Who is explaining? (Teacher, Scientist, Journalist, etc.)"
+          - "Who is the audience? (Kids, Adults, Experts, etc.)"
+          - "What's the communication goal? (Inform, Persuade, Guide, etc.)"
+          - "What tone is appropriate? (Formal, Friendly, Professional, etc.)"
+        instructions:
+          - "Language level"
+          - "Use of analogies"
+          - "Technical depth"
+          - "Key points to cover"
+      
+      navigation:
+        previous_page: "module2_intro"
+        next_page: "module2/lesson2_2/page2"
+
+  page_2:
+    title: "Advanced Role-Based Techniques"
+    route: "module2/lesson2_2/page2"
+    content:
+      introduction:
+        type: "markdown"
+        text: |
+          Advanced role-based techniques:
+          - Multiple persona combinations
+          - Expert role specifications
+          - Dynamic role adaptation
+          - Complex audience targeting
+      
+      techniques:
+        title: "Advanced Techniques"
+        sections:
+          - name: "Expert Role Definition"
+            elements:
+              - "Professional background"
+              - "Experience level"
+              - "Specialization areas"
+              - "Teaching/communication style"
+          - name: "Audience Layering"
+            elements:
+              - "Primary audience"
+              - "Secondary audiences"
+              - "Mixed expertise levels"
+              - "Cultural considerations"
+      
+      examples:
+        - title: "Complex Role Example"
+          type: "demonstration"
+          prompt: |
+            Act as an experienced environmental scientist with a background in public communication.
+            You're giving a TED talk to a mixed audience of:
+            - Primary: Concerned citizens (general knowledge)
+            - Secondary: Policy makers (need actionable points)
+            - Also present: Industry representatives (technical background)
+
+            Your goal is to explain the impact of microplastics on ocean ecosystems.
+            Balance these requirements:
+            - Use compelling data and visuals
+            - Provide actionable solutions
+            - Address economic considerations
+            - Maintain scientific accuracy
+
+            Structure your talk with:
+            1. Problem definition
+            2. Current research
+            3. Impact analysis
+            4. Solution framework
+            5. Call to action
+      
+      practice:
+        title: "AI Ethics Explanation"
+        requirements:
+          - section: "Expert Role"
+            elements:
+              - "Professional background"
+              - "Areas of expertise"
+              - "Communication style"
+          - section: "Multiple Audiences"
+            elements:
+              - "Primary audience"
+              - "Secondary audiences"
+              - "Their different needs"
+          - section: "Communication Goals"
+            elements:
+              - "Key messages"
+              - "Desired outcomes"
+              - "Balance of perspectives"
+          - section: "Structure"
+            elements:
+              - "Organization of content"
+              - "Supporting elements"
+              - "Engagement approach"
+      
+      navigation:
+        previous_page: "module2/lesson2_2/page1"
+        next_page: "module2/lesson2_3/page1"
+
+lesson_2_3:
+  page_2:
+    title: "Advanced Structured Outputs"
+    route: "module2/lesson2_3/page2"
+    content:
+      introduction:
+        type: "markdown"
+        text: |
+          Advanced structured output techniques:
+          - Nested data structures
+          - Mixed format outputs
+          - Data validation rules
+          - Error handling strategies
+      
+      techniques:
+        title: "Advanced Techniques"
+        sections:
+          - name: "Nested Structures"
+            elements:
+              - "Parent-child relationships"
+              - "Array of objects"
+              - "Conditional nesting"
+              - "Optional fields"
+          - name: "Validation Rules"
+            elements:
+              - "Data type checking"
+              - "Required fields"
+              - "Value constraints"
+              - "Format patterns"
+      
+      examples:
+        - title: "Complex Company Analysis"
+          type: "demonstration"
+          structure: |
+            {
+                "company": {
+                    "name": string,
+                    "industry": string,
+                    "size": {
+                        "employees": number,
+                        "revenue": string,  // Format: "$X million/billion"
+                        "locations": number
+                    }
+                },
+                "performance": {
+                    "financial": {
+                        "growth_rate": number,  // Percentage
+                        "profit_margin": number,  // Percentage
+                        "key_metrics": [
+                            {
+                                "name": string,
+                                "value": number,
+                                "trend": "up" | "down" | "stable",
+                                "impact": "positive" | "negative" | "neutral"
+                            }
+                        ]
+                    },
+                    "operational": {
+                        "efficiency_score": number,  // 1-100
+                        "challenges": string[],
+                        "opportunities": string[]
+                    }
+                },
+                "recommendations": [
+                    {
+                        "area": string,
+                        "suggestion": string,
+                        "priority": "high" | "medium" | "low",
+                        "estimated_impact": {
+                            "timeframe": string,
+                            "potential_benefit": string
+                        }
+                    }
+                ]
+            }
+      
+      practice:
+        title: "Research Paper Analysis"
+        sections:
+          - name: "Basic Information"
+            fields:
+              - "Title, authors, publication"
+              - "Keywords and categories"
+              - "Impact metrics"
+          - name: "Content Analysis"
+            fields:
+              - "Abstract summary"
+              - "Key findings"
+              - "Methodology details"
+          - name: "Impact Assessment"
+            fields:
+              - "Citations and references"
+              - "Field contributions"
+              - "Future implications"
+      
+      navigation:
+        previous_page: "module2/lesson2_3/page1"
+        next_page: "module2/lesson2_4/page1"
+
+lesson_2_4:
+  page_1:
+    title: "Iterative Prompt Refinement"
+    route: "module2/lesson2_4/page1"
+    content:
+      introduction:
+        type: "markdown"
+        text: |
+          Learning about iterative prompt refinement:
+          - Testing and evaluation
+          - Error analysis
+          - Systematic improvements
+          - Optimization strategies
+      
+      concepts:
+        title: "Key Concepts"
+        components:
+          - name: "Initial Prompt"
+            description: "Starting point for refinement"
+          - name: "Iterations"
+            description: "Multiple rounds of refinement"
+          - name: "Final Evaluation"
+            description: "Assessment of refined prompt"
+      
+      examples:
+        - title: "Climate Change Explanation"
+          type: "demonstration"
+          prompt: |
+            Explain climate change in simple terms, focusing on:
+            1. What it is
+            2. Why it's important
+            3. Basic steps involved
+            4. Specific impacts
+            5. Global solutions
+
+            Now refine this explanation:
+            - Make it more concise
+            - Include more specific examples
+            - Highlight global impacts
+          components:
+            - type: "text_area"
+              key: "initial_prompt"
+            - type: "button"
+              text: "Test Initial Prompt"
+            - type: "text_area"
+              key: "iteration_prompt"
+            - type: "button"
+              text: "Test Iteration"
+            - type: "text_area"
+              key: "final_evaluation"
+      
+      navigation:
+        previous_page: "module2/lesson2_3/page2"
+        next_page: "module2/lesson2_5/page1"
+
+lesson_2_5:
+  page_1:
+    title: "Prompt Engineering Project"
+    route: "module2/lesson2_5/page1"
+    content:
+      introduction:
+        type: "markdown"
+        text: |
+          Final Project: Applying Advanced Prompting Techniques
+          
+          Put your skills to the test with a real-world prompt engineering challenge.
+          Apply all the techniques you've learned to create sophisticated and 
+          effective prompts.
+      
+      project_options:
+        title: "Choose Your Challenge"
+        scenarios:
+          - name: "Travel Brochure"
+            requirements:
+              - "Create engaging travel brochure for fictional island"
+              - "Include sections for attractions, accommodations, cuisine"
+              - "Make it persuasive and informative"
+              - "End with compelling call to action"
+          
+          - name: "Historical Speech"
+            requirements:
+              - "Generate speech from historical figure"
+              - "Ensure historical accuracy and appropriate persona"
+              - "Match style to time period and occasion"
+              - "Maintain authentic voice and tone"
+          
+          - name: "Coding Assistant"
+            requirements:
+              - "Develop prompts for generating code"
+              - "Specify language and functionality requirements"
+              - "Include error handling and best practices"
+              - "Ensure clean, efficient code output"
+          
+          - name: "Creative Story"
+            requirements:
+              - "Craft short story with specific requirements"
+              - "Control genre, plot, and character elements"
+              - "Maintain consistent style and tone"
+              - "Create engaging narrative flow"
+          
+          - name: "AI Teaching Assistant"
+            requirements:
+              - "Design prompts for explaining academic concepts"
+              - "Create different types of educational content"
+              - "Include assessment and feedback mechanisms"
+              - "Ensure clear and accurate explanations"
+      
+      requirements:
+        sections:
+          - name: "Documentation of Process"
+            elements:
+              - "Initial prompt attempts"
+              - "Iterations and improvements"
+              - "Reasoning for changes"
+              - "Final refined prompt"
+          
+          - name: "Implementation of Techniques"
+            elements:
+              - "Few-shot prompting examples"
+              - "Role/persona definitions"
+              - "Structured output formats"
+              - "Iterative refinements"
+          
+          - name: "Analysis and Evaluation"
+            elements:
+              - "Quality of AI responses"
+              - "Accuracy and bias assessment"
+              - "Ethical considerations"
+              - "Areas for improvement"
+      
+      interactive_elements:
+        - type: "project_workspace"
+          components:
+            - type: "scenario_selector"
+              options:
+                - "Travel Brochure"
+                - "Historical Speech"
+                - "Coding Assistant"
+                - "Creative Story"
+                - "AI Teaching Assistant"
+            
+            - type: "prompt_iteration"
+              steps:
+                - name: "Initial Prompt"
+                  components:
+                    - type: "text_area"
+                      key: "initial_prompt"
+                    - type: "button"
+                      text: "Test Initial Prompt"
+                
+                - name: "Iterations"
+                  count: 3
+                  components:
+                    - type: "text_area"
+                      key: "iteration_prompt"
+                    - type: "button"
+                      text: "Test Iteration"
+                
+                - name: "Final Evaluation"
+                  components:
+                    - type: "text_area"
+                      key: "evaluation"
+      
+      navigation:
+        previous_page: "module2/lesson2_4/page1"
+        next_page: "module3_intro"
+
+module3:
+  intro:
+    title: "Critical Thinking & AI Ethics"
+    route: "module3_intro"
+    content:
+      introduction:
+        type: "markdown"
+        text: |
+          Developing critical AI interaction skills:
+          - Evaluating AI responses
+          - Identifying biases
+          - Detecting hallucinations
+          - Making ethical decisions
+      
+      lessons:
+        - number: "3.1"
+          title: "Identifying AI Biases"
+          topics:
+            - "Understanding types of AI bias"
+            - "Detecting bias in responses"
+            - "Writing bias-aware prompts"
+            - "Mitigating bias through prompting"
+        
+        - number: "3.2"
+          title: "Spotting AI Hallucinations"
+          topics:
+            - "Recognizing false information"
+            - "Fact-checking strategies"
+            - "Verification techniques"
+            - "Reducing hallucinations"
+        
+        - number: "3.3"
+          title: "Responsible AI Usage"
+          topics:
+            - "Ethical considerations"
+            - "Privacy concerns"
+            - "Data sensitivity"
+            - "Best practices"
+        
+        - number: "3.4"
+          title: "AI Ethics in Practice"
+          topics:
+            - "Real-world applications"
+            - "Ethical decision-making"
+            - "Impact assessment"
+            - "Future considerations"
+      
+      prerequisites:
+        - "Completion of Module 1"
+        - "Completion of Module 2"
+        - "Basic understanding of AI capabilities"
+        - "Familiarity with prompt engineering"
+      
+      structure:
+        - type: "Theoretical foundation"
+        - type: "Practical applications"
+        - type: "Hands-on practice"
+        - type: "Assessment & reflection"
+      
+      navigation:
+        previous_page: "module2/lesson2_5/page1"
+        next_page: "module3/lesson3_1/page1"
+
+lesson_3_1:
+  page_1:
+    title: "Identifying AI Biases"
+    route: "module3/lesson3_1/page1"
+    content:
+      introduction:
+        type: "markdown"
+        text: |
+          Understanding types of AI bias:
+          - Systemic bias
+          - Algorithmic bias
+          - Data bias
+          - Representation bias
+      
+      examples:
+        - title: "Systemic Bias"
+          type: "example"
+          description: |
+            A system that consistently favors one group over another.
+            Example: A hiring system that favors candidates from a specific university.
+        - title: "Algorithmic Bias"
+          type: "example"
+          description: |
+            A bias introduced by the algorithm's design.
+            Example: A recommendation system that favors products from a specific brand.
+        - title: "Data Bias"
+          type: "example"
+          description: |
+            A bias introduced by the data used to train the AI.
+            Example: A sentiment analysis system that is biased towards positive reviews.
+        - title: "Representation Bias"
+          type: "example"
+          description: |
+            A bias introduced by the representation of data.
+            Example: A face recognition system that is biased towards lighter skin tones.
+      
+      interactive_elements:
+        - type: "practice"
+          title: "Your Turn!"
+          instructions: |
+            Identify a bias in the following scenario:
+            "A news article summarizer that consistently favors articles from a specific political party."
+          components:
+            - type: "text_area"
+              key: "bias_description"
+            - type: "button"
+              text: "Identify Bias"
+              action: "identify_bias"
+      
+      navigation:
+        previous_page: "module3_intro"
+        next_page: "module3/lesson3_2/page1"
+
+lesson_3_2:
+  page_1:
+    title: "Spotting AI Hallucinations"
+    route: "module3/lesson3_2/page1"
+    content:
+      introduction:
+        type: "markdown"
+        text: |
+          Recognizing false information:
+          - False positives
+          - False negatives
+          - Ambiguous responses
+          - Unverifiable claims
+      
+      examples:
+        - title: "False Positive"
+          type: "example"
+          description: |
+            A response that appears accurate but is not.
+            Example: A medical diagnosis that is incorrect.
+        - title: "False Negative"
+          type: "example"
+          description: |
+            A response that appears inaccurate but is.
+            Example: A medical diagnosis that is missed.
+        - title: "Ambiguous Response"
+          type: "example"
+          description: |
+            A response that is unclear or lacks sufficient information.
+            Example: A response that does not provide a clear answer.
+        - title: "Unverifiable Claim"
+          type: "example"
+          description: |
+            A response that cannot be verified as true or false.
+            Example: A response that claims to have a solution without providing evidence.
+      
+      interactive_elements:
+        - type: "practice"
+          title: "Your Turn!"
+          instructions: |
+            Identify a hallucination in the following response:
+            "The AI system confidently predicts a high probability of rain tomorrow."
+          components:
+            - type: "text_area"
+              key: "hallucination_description"
+            - type: "button"
+              text: "Identify Hallucination"
+              action: "identify_hallucination"
+      
+      navigation:
+        previous_page: "module3/lesson3_1/page1"
+        next_page: "module3/lesson3_3/page1"
+
+lesson_3_3:
+  page_1:
+    title: "Advanced Ethical Considerations"
+    route: "module3/lesson3_3/page1"
+    content:
+      introduction:
+        type: "markdown"
+        text: |
+          Advanced ethical considerations:
+          - Handling sensitive information
+          - Managing conflicting interests
+          - Addressing ethical dilemmas
+          - Implementing safeguards
+      
+      frameworks:
+        title: "Advanced Ethical Frameworks"
+        sections:
+          - name: "Data Ethics"
+            elements:
+              - "Consent management"
+              - "Data lifecycle"
+              - "Information rights"
+              - "Usage boundaries"
+          
+          - name: "Ethical Decision-Making"
+            elements:
+              - "Risk assessment"
+              - "Impact analysis"
+              - "Stakeholder consideration"
+              - "Mitigation strategies"
+          
+          - name: "Professional Responsibility"
+            elements:
+              - "Accountability"
+              - "Transparency"
+              - "Due diligence"
+              - "Ethical guidelines"
+      
+      scenarios:
+        - title: "Research Data Analysis"
+          scenario: |
+            A research project involves analyzing social media posts about mental health experiences. 
+            The data could help improve support services but contains sensitive personal information.
+          considerations:
+            - "Privacy vs. public benefit"
+            - "Data sensitivity levels"
+            - "Consent implications"
+            - "Potential harm risks"
+          framework: |
+            Design an ethical research analysis framework that:
+
+            1. Data Protection
+               - Anonymization protocols
+               - Data minimization strategies
+               - Security measures
+               - Access controls
+
+            2. Ethical Guidelines
+               - IRB compliance requirements
+               - Informed consent procedures
+               - Participant rights
+               - Withdrawal mechanisms
+
+            3. Analysis Safeguards
+               - Aggregation methods
+               - De-identification techniques
+               - Privacy-preserving analytics
+               - Restricted access levels
+
+            4. Reporting Standards
+               - Confidentiality measures
+               - Result aggregation
+               - Finding generalization
+               - Impact consideration
+
+            Include appropriate disclaimers and ethical statements.
+        
+        - title: "AI System Development"
+          scenario: |
+            Developing an AI system to help with hiring decisions. 
+            The system needs to be fair and unbiased while maintaining efficiency and effectiveness.
+          considerations:
+            - "Algorithmic fairness"
+            - "Protected characteristics"
+            - "Bias mitigation"
+            - "Transparency requirements"
+          framework: |
+            Establish ethical AI development guidelines:
+
+            1. Fairness Requirements
+               - Protected attribute handling
+               - Bias testing protocols
+               - Fairness metrics
+               - Validation procedures
+
+            2. Transparency Measures
+               - Decision explanation
+               - Process documentation
+               - Audit trails
+               - User communication
+
+            3. Compliance Framework
+               - Legal requirements
+               - Industry standards
+               - Best practices
+               - Regular audits
+
+            4. Monitoring System
+               - Performance metrics
+               - Bias detection
+               - Impact assessment
+               - Feedback mechanisms
+
+            Include clear documentation of ethical considerations and limitations.
+      
+      practice:
+        title: "Educational AI System"
+        scenario: |
+          Creating an AI system that provides personalized learning recommendations for students, 
+          using their academic history, learning style, and behavioral data.
+        dimensions:
+          - name: "Data Handling"
+            aspects:
+              - "Student privacy"
+              - "Data security"
+              - "Access controls"
+              - "Retention policies"
+          
+          - name: "Algorithmic Fairness"
+            aspects:
+              - "Equal opportunity"
+              - "Bias prevention"
+              - "Accessibility"
+              - "Inclusivity"
+          
+          - name: "Transparency"
+            aspects:
+              - "Decision explanation"
+              - "Parent/guardian rights"
+              - "Student agency"
+              - "System limitations"
+          
+          - name: "Impact Assessment"
+            aspects:
+              - "Educational benefits"
+              - "Potential risks"
+              - "Mitigation strategies"
+              - "Success metrics"
+      
+      navigation:
+        previous_page: "module3/lesson3_2/page1"
+        next_page: "module3/lesson3_4/page1"
+
+lesson_3_4:
+  page_1:
+    title: "AI Ethics in Practice"
+    route: "module3/lesson3_4/page1"
+    content:
+      introduction:
+        type: "markdown"
+        text: |
+          Real-world applications of AI ethics:
+          - Impact assessment
+          - Ethical decision-making
+          - Future considerations
+      
+      examples:
+        - title: "Impact Assessment"
+          type: "example"
+          description: |
+            Evaluating the impact of AI on society and individuals.
+            Example: A self-driving car system that reduces accidents but may lead to job loss.
+        - title: "Ethical Decision-Making"
+          type: "example"
+          description: |
+            Making ethical choices in AI development and deployment.
+            Example: A medical AI system that balances patient privacy and data access.
+        - title: "Future Considerations"
+          type: "example"
+          description: |
+            Thinking about the long-term implications of AI.
+            Example: A chatbot that learns from interactions but may perpetuate stereotypes.
+      
+      interactive_elements:
+        - type: "practice"
+          title: "Your Turn!"
+          instructions: |
+            Analyze the ethical implications of the following scenario:
+            "A facial recognition system used for law enforcement that may disproportionately affect minority communities."
+          components:
+            - type: "text_area"
+              key: "ethical_analysis"
+            - type: "button"
+              text: "Analyze Ethical Implications"
+              action: "analyze_ethical_implications"
+      
+      navigation:
+        previous_page: "module3/lesson3_3/page1"
+        next_page: "module3/lesson3_5/page1"
+
+lesson_3_5:
+  page_1:
+    title: "AI Ethics Project"
+    route: "module3/lesson3_5/page1"
+    content:
+      introduction:
+        type: "markdown"
+        text: |
+          Final Project: Applying AI Ethics in Practice
+          
+          Put your skills to the test with a real-world AI ethics challenge.
+          Apply all the ethical considerations you've learned to create a responsible and 
+          ethical AI system.
+      
+      project_options:
+        title: "Choose Your Challenge"
+        scenarios:
+          - name: "Healthcare AI System"
+            description: "Design an AI system for medical diagnosis and treatment recommendations that ensures patient safety, privacy, and equitable care."
+            requirements:
+              - "HIPAA compliance and data protection"
+              - "Bias prevention in diagnoses"
+              - "Professional oversight integration"
+              - "Emergency override protocols"
+            considerations:
+              - "Patient privacy and consent"
+              - "Medical accuracy and safety"
+              - "Healthcare access equity"
+              - "Professional autonomy"
+          
+          - name: "Education AI Platform"
+            description: "Create an AI-powered learning platform that personalizes education while protecting student privacy and ensuring fair treatment."
+            requirements:
+              - "Student data protection"
+              - "Equitable learning access"
+              - "Progress monitoring ethics"
+              - "Parental transparency"
+            considerations:
+              - "Learning style diversity"
+              - "Socioeconomic factors"
+              - "Cultural sensitivity"
+              - "Development appropriateness"
+          
+          - name: "Autonomous Vehicle System"
+            description: "Develop an ethical framework for self-driving cars that must make split-second decisions affecting human safety."
+            requirements:
+              - "Safety prioritization protocols"
+              - "Emergency response systems"
+              - "Liability frameworks"
+              - "Public transparency"
+            considerations:
+              - "Life-value decisions"
+              - "Accident responsibility"
+              - "Public trust building"
+              - "Infrastructure integration"
+          
+          - name: "Law Enforcement AI"
+            description: "Design an AI system for law enforcement that balances public safety with civil rights and privacy concerns."
+            requirements:
+              - "Civil rights protection"
+              - "Bias prevention measures"
+              - "Accountability systems"
+              - "Privacy safeguards"
+            considerations:
+              - "Community impact"
+              - "Racial equity"
+              - "Due process rights"
+              - "Public oversight"
+      
+      framework_development:
+        sections:
+          - name: "System Design"
+            elements:
+              - "Core functionality"
+              - "Safety measures"
+              - "Privacy protections"
+              - "Access controls"
+          
+          - name: "Stakeholder Considerations"
+            elements:
+              - "Primary users"
+              - "Affected groups"
+              - "Professional requirements"
+              - "Community impact"
+          
+          - name: "Implementation Plan"
+            elements:
+              - "Development phases"
+              - "Testing protocols"
+              - "Deployment strategy"
+              - "Monitoring systems"
+          
+          - name: "Risk Management"
+            elements:
+              - "Potential issues"
+              - "Mitigation strategies"
+              - "Emergency procedures"
+              - "Update protocols"
+      
+      interactive_elements:
+        - type: "project_workspace"
+          components:
+            - type: "scenario_selector"
+              options:
+                - "Healthcare AI System"
+                - "Education AI Platform"
+                - "Autonomous Vehicle System"
+                - "Law Enforcement AI"
+            
+            - type: "framework_development"
+              sections:
+                - name: "System Design"
+                  key: "system_design"
+                  type: "text_area"
+                  height: 200
+                
+                - name: "Stakeholder Analysis"
+                  key: "stakeholder_analysis"
+                  type: "text_area"
+                  height: 200
+                
+                - name: "Implementation Strategy"
+                  key: "implementation"
+                  type: "text_area"
+                  height: 200
+                
+                - name: "Risk Management"
+                  key: "risk_management"
+                  type: "text_area"
+                  height: 200
+            
+            - type: "analysis_button"
+              text: "Analyze Framework"
+              key: "analyze_framework"
+      
+      navigation:
+        previous_page: "module3/lesson3_4/page2"
+        next_page: "module3/lesson3_5/page2" 

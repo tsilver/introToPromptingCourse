@@ -1,0 +1,44 @@
+module:
+  id: 1
+  title: "Fundamentals of Prompting"
+  lessons:
+    - id: 1.1
+      title: "Introduction to AI and Prompts"
+      pages:
+        - id: 1
+          type: lesson_page
+          title: "What is AI?"
+          content:
+            introduction:
+              text: |
+                Artificial Intelligence (AI) refers to computer systems that can perform tasks typically requiring 
+                human intelligence. Modern AI language models, like the one you're learning to work with, can:
+              bullet_points:
+                - "Understand and generate human language"
+                - "Answer questions and provide explanations"
+                - "Help with writing and analysis"
+                - "Engage in back-and-forth conversations"
+            limitations:
+              text: "However, AI also has important limitations. It:"
+              bullet_points:
+                - "Doesn't truly \"understand\" like humans do"
+                - "Can make mistakes or provide incorrect information"
+                - "May exhibit biases from its training data"
+                - "Cannot access real-time information"
+          interactive_example:
+            title: "Let's Try It Out!"
+            instruction: |
+              👉 Let's ask the AI a simple question to see how it responds. 
+              Watch how it processes our question and provides an answer.
+            example_prompt: "What is artificial intelligence in simple terms?"
+            show_code: true
+          key_points:
+            title: "Key Points to Remember"
+            points:
+              - "AI is a tool that can understand and respond to human language"
+              - "It works by processing your input (prompt) and generating appropriate responses"
+              - "The quality of the response depends on how well you communicate with it"
+              - "Always verify important information from AI responses"
+          navigation:
+            next_page: "module1/lesson1_1/page2"
+            button_text: "Continue to Next Page →" 

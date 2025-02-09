@@ -1,0 +1,505 @@
+course:
+  title: "AI Prompting Mastery"
+  description: "Learn effective AI communication through prompting techniques"
+  
+  modules:
+    module1:
+      title: "Fundamentals of Prompting"
+      description: "Master the basics of effective AI prompting"
+      lessons:
+        lesson1_1:
+          title: "Understanding AI and Prompts"
+          pages:
+            page1:
+              title: "Introduction to Prompting"
+              route: "module1/lesson1_1/page1"
+              content:
+                introduction:
+                  type: "markdown"
+                  text: |
+                    Learn the fundamentals of AI prompting:
+                    - What are prompts
+                    - How AI processes prompts
+                    - Basic prompt structure
+                key_concepts:
+                  - name: "Prompt Basics"
+                    description: "Core elements of effective prompts"
+                  - name: "AI Processing"
+                    description: "How AI interprets instructions"
+                interactive_elements:
+                  - type: "basic_prompt"
+                    instructions: "Try writing your first prompt"
+            page2:
+              title: "Components of Effective Prompts"
+              route: "module1/lesson1_1/page2"
+              content:
+                introduction:
+                  type: "markdown"
+                  text: |
+                    Understanding key components:
+                    - Clear instructions
+                    - Context
+                    - Format
+                    - Examples
+                examples:
+                  - title: "Basic vs. Detailed Prompt"
+                    type: "comparison"
+                    basic_prompt: "Explain photosynthesis."
+                    detailed_prompt: |
+                      Explain photosynthesis in simple terms, focusing on:
+                      1. What it is
+                      2. Why it's important
+                      3. Basic steps involved
+                      Keep the explanation suitable for a middle school student.
+
+        lesson1_2:
+          title: "Adding Constraints and Context"
+          pages:
+            page1:
+              title: "Using Constraints Effectively"
+              route: "module1/lesson1_2/page1"
+              content:
+                framework:
+                  title: "PCTF Framework"
+                  components:
+                    - name: "Persona"
+                      description: "Who the AI should act as"
+                    - name: "Context"
+                      description: "Background information"
+                    - name: "Task"
+                      description: "Specific instructions"
+                    - name: "Format"
+                      description: "Desired output structure"
+                examples:
+                  - title: "Basic vs. PCTF-Enhanced"
+                    type: "comparison"
+                    basic_prompt: "Write about renewable energy."
+                    enhanced_prompt: |
+                      As an environmental science educator (Persona),
+                      given the increasing focus on climate change solutions (Context),
+                      explain three main types of renewable energy suitable for residential use (Task).
+                      Structure your response with:
+                      - Brief overview of each type
+                      - Installation requirements
+                      - Average cost and savings
+                      - Environmental impact
+                      (Format)
+
+        lesson1_3:
+          title: "Asking for Explanations"
+          pages:
+            page1:
+              title: "Effective Explanations"
+              route: "module1/lesson1_3/page1"
+              content:
+                introduction:
+                  type: "markdown"
+                  text: |
+                    Learn to request clear explanations:
+                    - Clarity in requests
+                    - Specifying detail level
+                    - Target audience consideration
+                techniques:
+                  - name: "Depth Control"
+                    methods: ["Basic", "Intermediate", "Advanced"]
+                  - name: "Audience Adaptation"
+                    approaches: ["Technical", "General", "Simplified"]
+                examples:
+                  - title: "Explanation Levels"
+                    scenarios:
+                      - level: "Basic"
+                        prompt: "Explain how a car engine works to a child"
+                      - level: "Technical"
+                        prompt: "Explain internal combustion engine mechanics to an engineering student"
+
+        lesson1_4:
+          title: "Question-Answer Conversations"
+          pages:
+            page1:
+              title: "Conversation Management"
+              route: "module1/lesson1_4/page1"
+              content:
+                introduction:
+                  type: "markdown"
+                  text: |
+                    Master conversational prompting:
+                    - Question formulation
+                    - Follow-up techniques
+                    - Context maintenance
+                strategies:
+                  - name: "Question Types"
+                    types: ["Open-ended", "Specific", "Clarifying"]
+                  - name: "Context Building"
+                    methods: ["Reference previous", "Add details", "Clarify scope"]
+                examples:
+                  - title: "Conversation Flow"
+                    dialogue:
+                      - role: "User"
+                        text: "What are the main types of renewable energy?"
+                      - role: "AI"
+                        text: "The main types include solar, wind, and hydroelectric power..."
+                      - role: "User"
+                        text: "Tell me more about solar power specifically."
+
+    module2:
+      title: "Advanced Techniques"
+      description: "Learn advanced prompting methods"
+      lessons:
+        lesson2_1:
+          title: "Few-Shot Prompting"
+          pages:
+            page1:
+              title: "Learning from Examples"
+              route: "module2/lesson2_1/page1"
+              content:
+                introduction:
+                  type: "markdown"
+                  text: |
+                    Master few-shot prompting through examples:
+                    - Pattern-based learning
+                    - Example structures
+                    - Context adaptation
+                examples:
+                  - title: "Basic vs. Few-Shot"
+                    type: "comparison"
+                    basic_prompt: "Classify this text."
+                    few_shot_prompt: |
+                      Examples:
+                      Text: "Great product, works well!"
+                      Classification: Positive
+                      
+                      Text: "Broke after one use."
+                      Classification: Negative
+                      
+                      Text: "It's okay, nothing special."
+                      Classification: Neutral
+                      
+                      Now classify: "I love this item!"
+            page2:
+              title: "Advanced Few-Shot Techniques"
+              route: "module2/lesson2_1/page2"
+              content:
+                advanced_concepts:
+                  - name: "Pattern Matching"
+                    description: "Understanding how AI learns from patterns"
+                  - name: "Example Selection"
+                    description: "Choosing effective examples"
+                  - name: "Format Consistency"
+                    description: "Maintaining consistent structures"
+
+        lesson2_2:
+          title: "Role-Based Prompting"
+          pages:
+            page1:
+              title: "Using Personas"
+              route: "module2/lesson2_2/page1"
+              content:
+                introduction:
+                  type: "markdown"
+                  text: |
+                    Learn role-based techniques:
+                    - Expert personas
+                    - Specialized knowledge
+                    - Style adaptation
+                personas:
+                  - role: "Technical Expert"
+                    description: "Detailed technical explanations"
+                    example: |
+                      Act as a senior software engineer explaining microservices...
+            page2:
+              title: "Advanced Role Techniques"
+              route: "module2/lesson2_2/page2"
+              content:
+                advanced_roles:
+                  - name: "Multi-Role Interactions"
+                    description: "Managing multiple perspectives"
+                  - name: "Role Transitions"
+                    description: "Switching between personas"
+
+        lesson2_3:
+          title: "Structured Output Formatting"
+          pages:
+            page1:
+              title: "Output Structure Basics"
+              route: "module2/lesson2_3/page1"
+              content:
+                introduction:
+                  type: "markdown"
+                  text: |
+                    Learn to format AI outputs:
+                    - JSON structures
+                    - Markdown formatting
+                    - Custom templates
+                formats:
+                  - type: "JSON"
+                    example: |
+                      {
+                        "title": "Example Output",
+                        "sections": ["intro", "main", "conclusion"]
+                      }
+            page2:
+              title: "Complex Formatting"
+              route: "module2/lesson2_3/page2"
+              content:
+                advanced_formats:
+                  - name: "Nested Structures"
+                    description: "Complex data hierarchies"
+                  - name: "Dynamic Templates"
+                    description: "Adaptable output formats"
+
+        lesson2_4:
+          title: "Chain-of-Thought Prompting"
+          pages:
+            page1:
+              title: "Reasoning Steps"
+              route: "module2/lesson2_4/page1"
+              content:
+                introduction:
+                  type: "markdown"
+                  text: |
+                    Master chain-of-thought techniques:
+                    - Step-by-step reasoning
+                    - Logic breakdown
+                    - Thought process exposition
+                examples:
+                  - title: "Problem Solving"
+                    basic: "What's 15% of 85?"
+                    chain_thought: |
+                      Let's solve this step by step:
+                      1. Convert 15% to decimal (15/100 = 0.15)
+                      2. Multiply: 85 × 0.15
+                      3. Calculate: 85 × 0.15 = 12.75
+            page2:
+              title: "Advanced Reasoning"
+              route: "module2/lesson2_4/page2"
+              content:
+                advanced_concepts:
+                  - name: "Complex Problems"
+                    description: "Multi-step reasoning"
+                  - name: "Verification Steps"
+                    description: "Result checking"
+
+        lesson2_5:
+          title: "Iterative Refinement"
+          pages:
+            page1:
+              title: "Prompt Iteration"
+              route: "module2/lesson2_5/page1"
+              content:
+                introduction:
+                  type: "markdown"
+                  text: |
+                    Learn iterative improvement:
+                    - Response analysis
+                    - Prompt adjustment
+                    - Quality improvement
+                process:
+                  steps:
+                    - name: "Initial Attempt"
+                      description: "Base prompt creation"
+                    - name: "Analysis"
+                      description: "Response evaluation"
+                    - name: "Refinement"
+                      description: "Prompt modification"
+                    - name: "Validation"
+                      description: "Results verification"
+
+    module3:
+      title: "Critical Thinking & Ethics"
+      description: "Develop ethical AI practices"
+      lessons:
+        lesson3_1:
+          title: "Identifying AI Biases"
+          pages:
+            page1:
+              title: "Understanding Bias"
+              route: "module3/lesson3_1/page1"
+              content:
+                introduction:
+                  type: "markdown"
+                  text: |
+                    Learn about AI biases:
+                    - Types of bias
+                    - Detection methods
+                    - Mitigation strategies
+                bias_types:
+                  - name: "Data Bias"
+                    description: "Imbalanced training data"
+                    examples: ["Gender bias", "Racial bias", "Age bias"]
+                  - name: "Algorithmic Bias"
+                    description: "System design issues"
+                    examples: ["Feature selection bias", "Model bias"]
+                interactive_elements:
+                  - type: "bias_detection"
+                    examples:
+                      - text: "Example biased output"
+                        analysis: "Bias identification steps"
+            page2:
+              title: "Bias Mitigation"
+              route: "module3/lesson3_1/page2"
+              content:
+                strategies:
+                  - name: "Data Balancing"
+                    steps: ["Audit", "Balance", "Validate"]
+                  - name: "Prompt Engineering"
+                    techniques: ["Neutral language", "Inclusive terms"]
+
+        lesson3_2:
+          title: "Detecting Hallucinations"
+          pages:
+            page1:
+              title: "AI Hallucinations"
+              route: "module3/lesson3_2/page1"
+              content:
+                introduction:
+                  type: "markdown"
+                  text: |
+                    Understand and identify AI hallucinations:
+                    - Recognition patterns
+                    - Common triggers
+                    - Prevention methods
+                examples:
+                  - type: "hallucination_case"
+                    scenario: "Historical facts"
+                    hallucination: "Invented details"
+                    detection: "Verification steps"
+            page2:
+              title: "Prevention Techniques"
+              route: "module3/lesson3_2/page2"
+              content:
+                methods:
+                  - name: "Fact Checking"
+                    steps: ["Source verification", "Cross-reference"]
+                  - name: "Prompt Guards"
+                    techniques: ["Explicit constraints", "Verification requests"]
+
+        lesson3_3:
+          title: "Ethical AI Usage"
+          pages:
+            page1:
+              title: "Responsible AI"
+              route: "module3/lesson3_3/page1"
+              content:
+                introduction:
+                  type: "markdown"
+                  text: |
+                    Master ethical AI practices:
+                    - Privacy protection
+                    - Data handling
+                    - Responsible deployment
+                principles:
+                  - name: "Privacy First"
+                    guidelines: ["Data minimization", "Consent management"]
+                  - name: "Transparency"
+                    practices: ["Clear documentation", "User awareness"]
+            page2:
+              title: "Implementation"
+              route: "module3/lesson3_3/page2"
+              content:
+                frameworks:
+                  - name: "Ethical Guidelines"
+                    components: ["Privacy", "Fairness", "Accountability"]
+                  - name: "Implementation Steps"
+                    phases: ["Planning", "Testing", "Monitoring"]
+
+        lesson3_4:
+          title: "Ethics in Practice"
+          pages:
+            page1:
+              title: "Applied Ethics"
+              route: "module3/lesson3_4/page1"
+              content:
+                introduction:
+                  type: "markdown"
+                  text: |
+                    Apply ethical principles in real scenarios:
+                    - Decision frameworks
+                    - Impact assessment
+                    - Risk mitigation
+                case_studies:
+                  - title: "Healthcare AI"
+                    considerations: ["Patient privacy", "Treatment fairness"]
+                  - title: "Financial AI"
+                    considerations: ["Bias prevention", "Transparency"]
+            page2:
+              title: "Ethical Decision-Making"
+              route: "module3/lesson3_4/page2"
+              content:
+                framework:
+                  steps:
+                    - name: "Assessment"
+                      tasks: ["Impact analysis", "Stakeholder review"]
+                    - name: "Implementation"
+                      tasks: ["Safeguards", "Monitoring"]
+
+        lesson3_5:
+          title: "Final Project"
+          pages:
+            page1:
+              title: "Ethics Project"
+              route: "module3/lesson3_5/page1"
+              content:
+                introduction:
+                  type: "markdown"
+                  text: |
+                    Apply all learned concepts in a comprehensive project:
+                    - System design
+                    - Ethical implementation
+                    - Impact assessment
+                project_options:
+                  scenarios:
+                    - name: "Healthcare AI System"
+                      description: "Design an ethical medical AI system"
+                      requirements:
+                        - "HIPAA compliance"
+                        - "Bias prevention"
+                        - "Professional oversight"
+                    - name: "Education AI Platform"
+                      description: "Create ethical learning platform"
+                      requirements:
+                        - "Student privacy"
+                        - "Fair assessment"
+                        - "Accessibility"
+                    - name: "Autonomous Vehicle System"
+                      description: "Develop ethical driving framework"
+                      requirements:
+                        - "Safety protocols"
+                        - "Decision transparency"
+                        - "Emergency handling"
+                    - name: "Law Enforcement AI"
+                      description: "Design ethical surveillance system"
+                      requirements:
+                        - "Civil rights protection"
+                        - "Bias prevention"
+                        - "Accountability"
+                framework_development:
+                  sections:
+                    - name: "System Design"
+                      elements: ["Core functionality", "Safety measures"]
+                    - name: "Implementation"
+                      elements: ["Testing protocols", "Monitoring systems"]
+
+  completion:
+    certificate:
+      route: "course_certificate"
+      features:
+        - name: "Unique ID"
+          description: "Verifiable certificate identifier"
+        - name: "Skill Verification"
+          description: "Detailed competency listing"
+        - name: "Professional Signature"
+          description: "Course authority validation"
+        - name: "Issue Date"
+          description: "Official completion timestamp"
+    
+    analytics:
+      route: "comprehensive_analytics"
+      metrics:
+        - name: "Module Performance"
+          measures: ["Completion rates", "Exercise scores"]
+        - name: "Skill Development"
+          tracking: ["Progress charts", "Competency levels"]
+        - name: "Practical Application"
+          assessment: ["Project outcomes", "Implementation success"]
+        - name: "Learning Journey"
+          analysis: ["Growth patterns", "Area mastery"] 
